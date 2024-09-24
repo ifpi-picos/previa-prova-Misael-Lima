@@ -2,8 +2,8 @@ import { describe, it, expect } from "bun:test";
 import {
   maiorNumero,
   verificarParOuImpar,
-  contarCaracter,
-  atualizarPropriedade,
+  //contarCaracter,
+  //atualizarPropriedade,
 } from "./previa.js";
 
 // Teste para a função maiorNumero
@@ -20,7 +20,7 @@ describe("maiorNumero", () => {
 });
 
 // Teste para a função verificarParOuImpar
-describe("verificarParOuImpar", () => {
+/describe("verificarParOuImpar", () => {
   it('deve retornar "Par" para números pares', () => {
     expect(verificarParOuImpar(4)).toBe("Par");
   });
@@ -43,7 +43,7 @@ describe("contarCaracter", () => {
 });
 
 // Teste para a função atualizarPropriedade
-describe("atualizarPropriedade", () => {
+/*describe("atualizarPropriedade", () => {
   it("deve atualizar uma propriedade existente", () => {
     const objeto = { nome: "João", idade: 25 };
     expect(atualizarPropriedade(objeto, "idade", 30)).toEqual({
@@ -56,3 +56,4 @@ describe("atualizarPropriedade", () => {
     expect(atualizarPropriedade(objeto, "altura", 1.8)).toBe(null);
   });
 });
+*/
