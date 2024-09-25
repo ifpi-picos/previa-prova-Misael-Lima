@@ -7,6 +7,7 @@ export function maiorNumero(lista){
     }
 }
 
+
 export function verificarParOuImpar(num){
     
     if(typeof num === "number"){
@@ -22,6 +23,24 @@ export function verificarParOuImpar(num){
     
 }
 
-export function contarCaracter(contar){
-    if()
+
+export function contarCaracter(palavra){
+    if(typeof palavra != 'string'){
+        return null}
+
+    let contar = 0
+    for (const letra of palavra) {
+        if(letra.toLocaleLowerCase() == 'a'){
+            contar++
+        }
+    }return contar
+    }
+
+export function atualizarPropriedade(objeto, chave, valor){
+    if(chave in objeto){
+        objeto[chave] = valor
+        return objeto
+    }return null
 }
+
+  
